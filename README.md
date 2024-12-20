@@ -217,21 +217,33 @@ Explique o caminho que as instruções seguem desde um aplicativo escrito em Pyt
 # Resposta
 
 **Caminho das Instruções em Aplicativos Python e C até o Hardware**
-Python (Interpretado)
+
+# Python (Interpretado)
 **Código Fonte:** Escrito de forma legível, sem depender de plataforma.
+
 **Interpretador:** O código é convertido em bytecode e executado pela Máquina Virtual Python durante a execução.
+
 **Execução:** A interpretação em tempo real resulta em menor desempenho.
+
 **Kernel e Drivers:** O interpretador interage com o kernel e drivers para acessar o hardware.
-C (Compilado)
+
+# C (Compilado)
 **Código Fonte:** Escrito de forma legível, mas precisa ser compilado.
+
 **Compilação:** O código é transformado em código de máquina que gera um arquivo binário.
+
 **Execução:** O arquivo binário é executado diretamente pela CPU, proporcionando maior desempenho.
+
 **Kernel e Drivers:** O sistema operacional carrega o binário na memória e usa os drivers para acessar o hardware.
 Comparação
+
 **Python:** Flexível, mas mais lento devido à interpretação.
+
 **C:** Mais eficiente, com controle total sobre o hardware após a compilação.
+
 **Interação com o Kernel:** Ambos dependem do kernel e drivers para acessar o hardware.
-Conclusão:
+
+**Conclusão:**
 Python oferece facilidade e portabilidade, enquanto C garante maior desempenho, mas exige um processo de desenvolvimento mais detalhado.
 
 
