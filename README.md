@@ -62,12 +62,16 @@ A estrutura de um sistema operacional (SO) é fundamental para determinar tanto 
    **Comparação de Arquiteturas de Sistemas Operacionais**
    
 **Arquitetura Monolítica** Imagine um sistema operacional como uma grande máquina com todas as peças conectadas diretamente. Na arquitetura monolítica, tudo – desde o gerenciamento de memória até os drivers – está integrado em um único bloco de código. Isso facilita o desenvolvimento inicial, mas pode ser um problema na hora de fazer ajustes, já que uma mudança pequena pode impactar todo o sistema.
+
 Exemplo: O Linux tradicional segue esse modelo, onde o núcleo é robusto e centralizado.
 
 **Arquitetura Microkernel:** Agora pense em um sistema que funciona com um núcleo mínimo, responsável apenas pelo essencial, como comunicação entre processos. Outros serviços, como drivers, ficam separados, o que traz mais segurança e organização. No entanto, essa separação pode tornar as operações um pouco mais lentas, pois exige mais trocas de informações entre os componentes.
+
 Exemplo: O Minix é um exemplo de sistema que adota essa abordagem enxuta e segura.
 Arquitetura em Camadas.
+
 Por fim, visualize um sistema organizado como uma pilha de camadas, onde cada nível tem sua função específica e só se comunica com as camadas próximas. Isso facilita o gerenciamento e a segurança, mas pode tornar o desenvolvimento mais desafiador.
+
 Exemplo: O Windows utiliza essa estrutura em camadas, com uma separação clara entre o núcleo e os elementos que interagem diretamente com o usuário.
 
 
@@ -101,12 +105,17 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
   # Resposta
   
 **Segurança em Sistemas: Controle de Acesso e Criptografia**
+
 **Controle de Acesso:** Este mecanismo garante que apenas usuários autorizados tenham acesso a sistemas ou recursos. No processo de login, o sistema valida credenciais (nome de usuário e senha) para permitir ou bloquear o acesso.
+
 Exemplo: Acesso a uma conta bancária online, onde as credenciais são verificadas antes de permitir o acesso.
+
 Impacto: Aumenta a segurança, mas pode causar frustração se o processo de autenticação for lento ou exigir etapas adicionais.
 
 **Criptografia:** A criptografia codifica informações para torná-las inacessíveis a pessoas não autorizadas. O HTTPS, por exemplo, protege os dados trocados entre o navegador e o servidor, assegurando a segurança de informações sensíveis.
+
 Exemplo: Dados de um cartão de crédito enviados em um site de e-commerce são criptografados para impedir interceptação.
+
 Impacto: Aumenta a segurança contra ataques cibernéticos, mas pode adicionar latência e exigir mais recursos computacionais.
 
 
@@ -145,14 +154,18 @@ A segurança de sistemas operacionais é essencial para proteger dados e recurso
 
 **Controle de Acesso**
 O controle de acesso visa restringir o uso de recursos do sistema apenas a usuários autorizados, garantindo a segurança do ambiente. A autenticação, como o uso de senhas ou autenticação em dois fatores, é um exemplo comum desse mecanismo.
+
 **Benefícios:** Aumenta a segurança ao garantir que apenas usuários legítimos possam acessar informações e serviços sensíveis.
+
 **Desafios:** Processos de autenticação mais complexos podem resultar em tempos de espera maiores para o usuário, o que pode ser inconveniente, especialmente em sistemas que exigem múltiplas verificações.
 Impacto na Experiência do Usuário: Embora crucial para a segurança, a implementação de verificações rigorosas pode causar frustração no uso diário, dado o aumento no número de etapas para acessar o sistema.
 Exemplo: No caso de um banco online, o controle de acesso com autenticação em dois fatores garante a proteção contra fraudes, mas pode gerar um pequeno atraso no processo de login.
 
 **Criptografia**
 A criptografia protege os dados, tornando-os ilegíveis para quem não tem autorização, garantindo a segurança de informações durante a transmissão e no armazenamento.
+
 **Benefícios:** Protege informações sensíveis, como senhas e dados bancários, garantindo que esses dados não sejam interceptados.
+
 **Desafios:** Processos de criptografar e descriptografar dados consomem recursos do sistema, podendo afetar a performance, especialmente em sistemas que exigem grandes volumes de dados.
 Impacto na Experiência do Usuário: A criptografia pode aumentar o tempo de resposta, resultando em um pequeno atraso na comunicação de dados. No entanto, a segurança que ela proporciona compensa esse impacto.
 Exemplo: Ao fazer compras online, os dados do cartão de crédito são criptografados, garantindo a proteção das informações, mas com um pequeno aumento na latência.
@@ -191,13 +204,21 @@ Considerando os conceitos de custo de processamento e algoritmo ótimo de escalo
 # Resposta
 
 **Impacto do Custo de Processamento nos Algoritmos de Escalonamento**
+
 O escalonamento de processos é essencial para gerenciar a execução de tarefas em um sistema operacional. O objetivo é otimizar a utilização da CPU e reduzir os tempos de espera e resposta, mas a escolha do algoritmo envolve um equilíbrio entre eficiência e custo de processamento.
+
 **Custo de Processamento**
+
 O custo de processamento está relacionado ao tempo e recursos necessários para executar um algoritmo de escalonamento. Algoritmos simples, como o First-Come, First-Served (FCFS), podem ser mais rápidos, mas podem resultar em longos tempos de espera para certos processos. Já algoritmos mais complexos, como o Round Robin (RR), distribuem o tempo de CPU de forma justa, mas geram maior sobrecarga devido às trocas frequentes de processos.
+
 **Algoritmos Comuns de Escalonamento**
+
 First-Come, First-Served (FCFS): Simples e fácil de implementar, mas pode gerar longos tempos de espera para processos curtos. Tem baixo custo de processamento, mas não é eficiente quando há uma mistura de tarefas longas e curtas.
+
 **Round Robin (RR):** Justo, garantindo que todos os processos recebam tempo de CPU igual, mas pode resultar em sobrecarga devido à troca constante de processos. É ideal para sistemas com múltiplos usuários, como servidores web, mas tem um custo de processamento mais alto.
+
 **Impacto na Performance**
+
 A escolha de um algoritmo depende do tipo de sistema e dos requisitos de performance. Em sistemas interativos ou de tempo real, onde a justiça no acesso ao processador é essencial, o Round Robin é vantajoso. Já em sistemas com tarefas mais simples ou similares em duração, como em sistemas de linha de comando, o FCFS pode ser suficiente, pois tem um custo de processamento menor.
 
 # Questão 5. Aplicativo em python vs aplicativos em c
